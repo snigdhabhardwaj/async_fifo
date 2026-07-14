@@ -43,3 +43,4 @@ always @(posedge rd_clk) begin
     if (rd_en)
         rd_data <= mem[rd_addr]; //Take the contents stored at rd_addr and place it on the output register rd_data
 end
+endmodule
