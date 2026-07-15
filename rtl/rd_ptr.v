@@ -12,8 +12,9 @@ module rd_ptr #(
     input empty,
 
     // Outputs port declaredd
-    output [ADDR_WIDTH-1:0] rd_addr,
-    output [ADDR_WIDTH:0] rd_gray
+   output [ADDR_WIDTH-1:0] rd_addr,
+output [ADDR_WIDTH:0]   rd_gray,
+output [ADDR_WIDTH:0]   rptr_gray_next
 );
 
 // Internal Signals
@@ -27,8 +28,7 @@ wire [ADDR_WIDTH:0] rptr_bin_next;
 // Current Read Pointer 
 reg  [ADDR_WIDTH:0] rptr_gray;
 
-// Next Read Pointer 
-wire [ADDR_WIDTH:0] rptr_gray_next;
+
 
 // Output Assignments
 
